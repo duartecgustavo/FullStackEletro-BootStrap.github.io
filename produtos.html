@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Gustavo Castanho Duarte">
+    <meta name="palavra chave" content="html5, loja_virtual, produtos">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Full-Stack-Eletro</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/produtos.css">
+    <script src="./JS/eventos.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+    <!--MENU-->
+    <!-- <div class="menu">
+        <nav>
+            <a href="index.html"><img style="font-family: Comic Sans MS;" class="logomenumain" width="200px" src="imgs/logo3.jpg" alt="HOME"></a>
+            <a href="produtos.html"><img class="logomenu" width="200px" src="imgs/produtoslogo.jpg" alt="PRODUTOS"></a>
+            <a href="lojas.html"><img class="logomenu" width="200px" src="imgs/lojaslogo.jpg" alt="LOJAS"></a>
+            <a href="contato.html"><img class="logomenu" width="200px" src="imgs/contatoslogo.jpg" alt="CONTATOS"></a>
+        </nav>
+    </div> -->
+    <nav class="nav nav-pills nav-fill d-flex align-items-center bg-warning" style="height: 10vh;">
+        <a class="nav-item nav-link font-weight-bold text-dark" href="index.html">Home</a>
+        <a class="nav-item nav-link font-weight-bold text-dark active" href="produtos.html">Produtos</a>
+        <a class="nav-item nav-link font-weight-bold text-dark" href="lojas.html">Lojas</a>
+        <a class="nav-item nav-link font-weight-bold text-dark" href="contato.html">Contatos</a>
+    </nav>
+
+    <main>
+        <!--LOGO PAGINA-->
+        <section class="logo" >
+            <img class="imglogo" src="imgs/produtoslogo.jpg">
+        </section>
+
+        <section>
+            <!-- BARRA DE CATEGORIAS -->
+            <div class="prodCategoriaBarra">
+                <p class="categoria" onclick="exibir_Todos('todos')" style="cursor:pointer">TODOS</p>
+                <p class="categoria" onclick="exibir_categoria('geladeira')" style="cursor:pointer">GELADEIRAS(3)</p>
+                <p class="categoria" onclick=" exibir_categoria('fogao')" style="cursor:pointer">FOGÕES(2)</p>
+                <p class="categoria" onclick=" exibir_categoria('lavaroupa')" style="cursor:pointer">LAVA-LOUÇA (1)</p>
+                <p class="categoria" onclick="exibir_categoria('microondas')" style="cursor:pointer">MICRO-ONDAS (2)</p>
+                <p class="categoria" onclick="exibir_categoria('freezer')" style="cursor:pointer">FREEZER (3)</p>
+                <p class="pedido" style="cursor:pointer">COMPRAR</p>
+            </div>
+<!-- style="width: 220px; height: 170px;" -->
+            <!-- PRODUTOS -->
+            <div class="produtosprod">
+                <div class="prod" id="fogao" id="fogaoconsul">
+                    <img class="fogao-atlas" src="./imgs/Fogão_Atlas.jpeg" alt="" style="width: 220px; height: 170px;" onclick="aumentar(this)">
+                    <p class="titulo-prod" style="font-size: 13px;">Fogão Atlas 4 Bocas Tropical Glass - Branco</p>
+                    <hr>
+                    <p class="preco-cort">R$ 799,00</p>
+                    <p class="preco-venda">R$ 699,00</p>
+                </div>
+                <div class="prod" id="fogao">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="fogao-consul" src="./imgs/Fogão_Consul.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Fogão Consul 4 Bocas com Acendimento Automático</p>
+                    <hr>
+                    <p class="preco-cort">R$ 599,00</p>
+                    <p class="preco-venda">R$ 499,00</p>
+                </div>
+                <div class="prod" id="geladeira">
+                    <img style="width: 220px; height: 170px;"  onclick="aumentar(this)" class="Geladeira_Brastemp_Prata" src="./imgs/Geladeira_Brastemp_Prata.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Geladeira Brastemp Frost Free Inverse - Prata</p>
+                    <hr>
+                    <p class="preco-cort">R$ 6.499,00</p>
+                    <p class="preco-venda">R$ 5.999,00</p>
+                </div>
+                <div class="prod" id="geladeira">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Geladeira_Consul" style="width: 30%;" src="./imgs/Geladeira_Consul.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Geladeira Consul Frost Free - Prata</p>
+                    <hr>
+                    <p class="preco-cort">R$ 4.499,00</p>
+                    <p class="preco-venda">R$ 3.999,00</p>
+                </div>
+                <div class="prod" id="geladeira">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Geladeira_Brastemp_Branca" src="./imgs/Geladeira_Brastemp_Branca.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Geladeira Brastemp Frost Free Inverse - Branca</p>
+                    <hr>
+                    <p class="preco-cort">R$ 5.499,00</p>
+                    <p class="preco-venda">R$ 4.999,00</p>
+                </div>
+                <div class="prod" id="freezer">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Freezer_Electrolux" src="./imgs/Freezer_Electrolux.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Freezer Electrolux FE26 Cycle Defrost - 203L</p>
+                    <hr>
+                    <p class="preco-cort">R$ 1.299,00</p>
+                    <p class="preco-venda">R$ 999,00</p>
+                </div>
+                <div class="prod" id="lavaroupa">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Lava_Roupa_Brastemp" src="./imgs/Lava_Roupa_Brastemp.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Máquina de Lavar Brastemp e Lavagem mais rápida</p>
+                    <hr>
+                    <p class="preco-cort">R$ 1,699,00</p>
+                    <p class="preco-venda">R$ 1.499,00</p>
+                </div>
+                <div class="prod" id="lavaroupa">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Lava_Roupa_Philco" src="./imgs/Lava_Roupa_Philco.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Máquina de Lavar Philco e Enxágue rápido</p>
+                    <hr>
+                    <p class="preco-cort">R$ 1.999,00</p>
+                    <p class="preco-venda">R$ 1.999,00</p>
+                </div>
+                <div class="prod" id="lavaroupa">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Lavadoura_Brastemp" src="./imgs/Lavadoura_Brastemp.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Máquina de Lavar 15kg Enxágue Anti-Alérgico</p>
+                    <hr>
+                    <p class="preco-cort">R$ 2.499,00</p>
+                    <p class="preco-venda">R$ 1.999,00</p>
+                </div>
+                <div class="prod" id="microondas">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Micro_ElectroLux" src="./imgs/Micro_ElectroLux.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Micro-ondas Electrolux MEF41 menoe radioativo</p>
+                    <hr>
+                    <p class="preco-cort">R$ 799,00</p>
+                    <p class="preco-venda">R$ 499,00</p>
+                </div>
+                <div class="prod" id="microondas">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Micro_Ondas_Consul" src="./imgs/Micro_Ondas_Consul.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Micro-ondas Consul ainda menos radioativo</p>
+                    <hr>
+                    <p class="preco-cort">R$ 899,00</p>
+                    <p class="preco-venda">R$ 699,00</p>
+                </div>
+                <div class="prod" id="microondas">
+                    <img style="width: 220px; height: 170px;" onclick="aumentar(this)" class="Micro_Philco" src="./imgs/Micro_Philco.jpeg" alt="">
+                    <p class="titulo-prod" style="font-size: 13px;">Micro-ondas Philco sem radiação 2020</p>
+                    <hr>
+                    <p class="preco-cort">R$ 399,00</p>
+                    <p class="preco-venda">R$ 250,00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+
+    <!--RODAPÉ-->
+    <footer class="rodape" style="position: absolute;">
+        <!-- style="bottom: -70%;  -->
+        <!-- FORMAS DE PAGAMENTO-->
+        <p class="logofooter"><img width="25%" src="imgs/pagamentos.jpg"></p>
+
+        <img class="imgpag" alt="Formas_De_Pagamento" title="Formas De Pagamento" src="imgs/pagamentos.png">
+
+        <p class="copyright">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+    </footer>
+</body>
+
+</html>

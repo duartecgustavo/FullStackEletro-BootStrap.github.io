@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Gustavo Castanho Duarte">
+    <meta name="palavra chave" content="html5, tecnologia">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Full-Stack-Eletro</title>
+
+    <!-- LINK CSS - estilo da pagina-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/home.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+    <!-- <div class="menu">
+        <nav  class="menubar">
+            <a href="index.html"><img style="font-family: Comic Sans MS;" class="logomenumain" width="200px" src="imgs/logo3.jpg" alt="HOME"></a>
+            <a href="produtos.html"><img class="logomenu" width="200px" src="imgs/produtoslogo.jpg" alt="PRODUTOS"></a>
+            <a href="lojas.html"><img class="logomenu" width="200px" src="imgs/lojaslogo.jpg" alt="LOJAS"></a>
+            <a href="contato.html"><img class="logomenu" width="200px" src="imgs/contatoslogo.jpg" alt="CONTATOS"></a>
+        </nav>
+    </div>
+    <br> <br> <br>
+    <br> <br> <br> -->
+    <nav class="nav nav-pills nav-fill d-flex align-items-center bg-danger" style="height: 10vh;">
+        <a class="nav-item nav-link font-weight-bold text-white active" href="index.html">Home</a>
+        <a class="nav-item nav-link font-weight-bold text-white" href="produtos.html">Produtos</a>
+        <a class="nav-item nav-link font-weight-bold text-white" href="lojas.html">Lojas</a>
+        <a class="nav-item nav-link font-weight-bold text-white" href="contato.html">Contatos</a>
+    </nav>
+
+    <br>
+        <!--LOGO PAGINA-->
+        <!-- <section class="logo">
+            <img class="imglogo" src="imgs/logo2.png">
+        </section> -->
+
+        <!--CAPA-->
+        <!-- <section class="capa">
+            <div class="banner">
+                <img class="imagemcapa" id="imagemcapa" width="100%" alt="capa" src="imgs/maincapa.jpg">
+                
+                <div class="maincapadiv">
+                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa1" class="maincapa">
+                    <label for="maincapa1"></label>
+                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa2" class="maincapa">
+                    <label for="maincapa2"> </label>
+                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa3" class="maincapa">
+                    <label for="maincapa3"> </label>
+                </div>
+            </div>
+        </section> -->
+
+        <!--LOGIN-->
+        <div class="container-fluid align-content-center">
+            <p class="logologin"><img width="15%" src="imgs/login.jpg"></p>
+
+            <div class="container justify-content-center">
+
+                <form style="margin-top: 10%;">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Endereço de email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                    </div>
+                    <div class="form-group form-check">
+                    <a href="cadastro.html" target="_blank" >Não tem cadastro? Clique Aqui!</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+        <br> <br> <br>
+        <br> <br> <br>
+        <br> 
+    <!--RODAPÉ-->
+    <footer class="rodape" style="position: relative;">
+        <!-- FORMAS DE PAGAMENTO-->
+        <p class="logofooter"><img width="25%" src="imgs/pagamentos.jpg"></p>
+
+        <img class="imgpag" alt="Formas_De_Pagamento" title="Formas De Pagamento" src="imgs/pagamentos.png">    
+
+        <p class="copyright">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+    </footer>
+
+    <script src="./JS/eventos.js"></script>
+</body>
+</html>
