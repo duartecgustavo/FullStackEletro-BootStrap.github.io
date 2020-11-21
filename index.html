@@ -5,98 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Gustavo Castanho Duarte">
     <meta name="palavra chave" content="html5, tecnologia">
+
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css">
+
     <title>Full-Stack-Eletro</title>
-
-    <!-- LINK CSS - estilo da pagina-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/home.css">
-
 </head>
 <body>
+    <!-- style="border: 2px black solid;" -->
 
-    <div class="container-fluid">
-    <!-- <div class="menu">
-        <nav  class="menubar">
-            <a href="index.html"><img style="font-family: Comic Sans MS;" class="logomenumain" width="200px" src="imgs/logo3.jpg" alt="HOME"></a>
-            <a href="produtos.html"><img class="logomenu" width="200px" src="imgs/produtoslogo.jpg" alt="PRODUTOS"></a>
-            <a href="lojas.html"><img class="logomenu" width="200px" src="imgs/lojaslogo.jpg" alt="LOJAS"></a>
-            <a href="contato.html"><img class="logomenu" width="200px" src="imgs/contatoslogo.jpg" alt="CONTATOS"></a>
+    <!-- HEADER -->
+
+    <style>
+
+    @media(max-width: 960px){
+        .link2{
+            display: none;
+        }            
+    }
+
+    @media(min-width: 960px){
+        .botao{
+            display: none;
+        }            
+        .espaço{
+            display: none;
+        }            
+    }
+    </style>
+
+    <div class="container-fluid bg-danger" style="height: 14vh;">
+
+        <nav class="nav nav-pills row d-flex align-items-center" style="height: 14vh;">
+
+            <a class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" 
+            href="index.html"
+            style="height: 100% !important;">
+            <img class="col-lg-5 p-2" src="./imgs/logoSVG.svg" style="width: 150px; height: 100% !important;" alt="">
+            </a>
+
+            <div class="link2 row col-lg-8 justify-content-end">
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 active" style="font-size: 20px;" href="index.html">Home</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px;" href="produtos.html">Produtos</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px;" href="lojas.html">Lojas</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px;" href="contato.html">Contatos</a>
+            </div>
+
+            <div class="espaço col-6 col-sm-6 col-md-6 bg-sucess" style="width: 20px !important; height: 20px !important; " >
+
+            </div>
+
+            <button class="botao bg-dark col-1 col-sm-1 col-md-1" type="button" ">
+                <div class="dropdown">
+                    <a class="btn navbar-toggler-icon" 
+                        href="#" 
+                        style="width: 40px; height: 40px;" 
+                        role="button" 
+                        id="dropdownMenuLink" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="true">
+                    </a>
+                
+                    <div class="dropdown-menu"  style="width: 300px;" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item p-3 dropBar" href="#">QUEM SOMOS</a>
+                        <a class="dropdown-item p-3 dropBar" style="background-color: #8b1cdad7 !important;" href="#">BLOG</a>
+                        <a class="dropdown-item p-3 dropBar" href="#">CONTATO</a>
+                    </div>
+                </div>
+            </button>
         </nav>
     </div>
-    <br> <br> <br>
-    <br> <br> <br> -->
-    <nav class="nav nav-pills nav-fill d-flex align-items-center bg-danger" style="height: 10vh;">
-        <a class="nav-item nav-link font-weight-bold text-white active" href="index.html">Home</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="produtos.html">Produtos</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="lojas.html">Lojas</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="contato.html">Contatos</a>
-    </nav>
 
-    <br>
-        <!--LOGO PAGINA-->
-        <!-- <section class="logo">
-            <img class="imglogo" src="imgs/logo2.png">
-        </section> -->
-
-        <!--CAPA-->
-        <!-- <section class="capa">
-            <div class="banner">
-                <img class="imagemcapa" id="imagemcapa" width="100%" alt="capa" src="imgs/maincapa.jpg">
-                
-                <div class="maincapadiv">
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa1" class="maincapa">
-                    <label for="maincapa1"></label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa2" class="maincapa">
-                    <label for="maincapa2"> </label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa3" class="maincapa">
-                    <label for="maincapa3"> </label>
-                </div>
-            </div>
-        </section> -->
-
-        <!--LOGIN-->
-        <div class="container-fluid align-content-center">
-            <p class="logologin"><img width="15%" src="imgs/login.jpg"></p>
-
-            <div class="container justify-content-center">
-
-                <form style="margin-top: 10%;">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Endereço de email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-                      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                    </div>
-                    <div class="form-group form-check">
-                    <a href="cadastro.html" target="_blank" >Não tem cadastro? Clique Aqui!</a>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar</button>
-                  </form>
-            </div>
-        </div>
-    </div>
-        <br> <br> <br>
-        <br> <br> <br>
-        <br> 
-    <!--RODAPÉ-->
-    <footer class="rodape" style="position: relative;">
+    <!-- /HEADER -->
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-danger" style="height: 14vh;">
         <!-- FORMAS DE PAGAMENTO-->
-        <p class="logofooter"><img width="25%" src="imgs/pagamentos.jpg"></p>
+        <div class="text-center" style=" height: 100%;">
+            <img class="p-2" style="height: 75%;" src="imgs/pagamentos.png">
 
-        <img class="imgpag" alt="Formas_De_Pagamento" title="Formas De Pagamento" src="imgs/pagamentos.png">    
-
-        <p class="copyright">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+            <p class="">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+        </div>
     </footer>
+    <!-- /FOOTER -->
+
+
+
 
     <script src="./JS/eventos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
