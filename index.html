@@ -5,98 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Gustavo Castanho Duarte">
     <meta name="palavra chave" content="html5, tecnologia">
+
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css">
+
     <title>Full-Stack-Eletro</title>
 
-    <!-- LINK CSS - estilo da pagina-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/home.css">
+    <style>
+
+        @media(max-width: 993px){
+            .desktop{
+                display: none !important;
+            }
+        }
+    
+        @media(min-width: 993px){
+            .phone {
+                display: none !important;
+            }               
+        }
+    </style>
 
 </head>
-<body>
+<body style="background-color: #E17A84">
+    <!-- style="border: 2px black solid;" -->
 
-    <div class="container-fluid">
-    <!-- <div class="menu">
-        <nav  class="menubar">
-            <a href="index.html"><img style="font-family: Comic Sans MS;" class="logomenumain" width="200px" src="imgs/logo3.jpg" alt="HOME"></a>
-            <a href="produtos.html"><img class="logomenu" width="200px" src="imgs/produtoslogo.jpg" alt="PRODUTOS"></a>
-            <a href="lojas.html"><img class="logomenu" width="200px" src="imgs/lojaslogo.jpg" alt="LOJAS"></a>
-            <a href="contato.html"><img class="logomenu" width="200px" src="imgs/contatoslogo.jpg" alt="CONTATOS"></a>
-        </nav>
-    </div>
-    <br> <br> <br>
-    <br> <br> <br> -->
-    <nav class="nav nav-pills nav-fill d-flex align-items-center bg-danger" style="height: 10vh;">
-        <a class="nav-item nav-link font-weight-bold text-white active" href="index.html">Home</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="produtos.html">Produtos</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="lojas.html">Lojas</a>
-        <a class="nav-item nav-link font-weight-bold text-white" href="contato.html">Contatos</a>
+    <!-- MENU DESKTOP -->
+    <nav class="desktop nav d-flex align-items-center bg-danger" style="height: 12vh;">
+        
+        <a class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" 
+        href="index.html"
+        style="height: 100% !important;">
+        <img class="col-lg-5 p-2" src="./imgs/svgs/logoSVG.svg" 
+        style="width: 150px; height: 100% !important;" alt="">
+        </a>
+
+        <div class="row col-lg-8 justify-content-end">
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2" style="font-size: 20px; color: black !important; background-color: rgba(228, 220, 220, 0.651); border-radius: 20px;" href="index.html">Home</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="produtos.html">Produtos</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="lojas.html">Lojas</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="contato.html">Contatos</a>
+        </div>
     </nav>
+    <!-- /MENU DESKTOP -->
 
-    <br>
-        <!--LOGO PAGINA-->
-        <!-- <section class="logo">
-            <img class="imglogo" src="imgs/logo2.png">
-        </section> -->
+    <!-- MENU DEVICE -->
+    <nav class="phone nav row align-items-center bg-danger" style="height: 15vh;">
 
-        <!--CAPA-->
-        <!-- <section class="capa">
-            <div class="banner">
-                <img class="imagemcapa" id="imagemcapa" width="100%" alt="capa" src="imgs/maincapa.jpg">
-                
-                <div class="maincapadiv">
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa1" class="maincapa">
-                    <label for="maincapa1"></label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa2" class="maincapa">
-                    <label for="maincapa2"> </label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa3" class="maincapa">
-                    <label for="maincapa3"> </label>
+        <a class="col-6 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-left" 
+            href="index.html"
+            style="height: 100% !important;">
+            <img class="col-lg-5 p-2" src="./imgs/svgs/logoSVG.svg" 
+            style="width: 150px; height: 100% !important;" alt="">
+        </a>
+
+
+        <button class="navbar-toggler col-5 col-sm-5 col-md-5 col-lg-5 d-flex align-items-center justify-content-end bg-danger pr-4" type="button" style="height: 100%;" >
+            <div class="dropdown">
+                <a class="btn navbar-toggler-icon" 
+                    href="#" 
+                    
+                    role="button" 
+                    id="dropdownMenuLink" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+                    <img class="mx-auto my-auto" src="./imgs/svgs/seta-para-baixo-do-angulo.svg" alt="" style="width: 20px;">
+                    </a>
+            
+                <div class="dropdown-menu dropdown-menu-right"  style="width: 80vw;" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item p-3 dropBar" style="background-color:#DB465A !important; font-weight: bold;" href="produtos.html">PRODUTOS</a>
+                    <a class="dropdown-item p-3 dropBar" style="background-color:#E17A84 !important; font-weight: bold;" href="lojas.html">LOJAS</a>
+                    <a class="dropdown-item p-3 dropBar" style="background-color:#DB465A !important; font-weight: bold;" href="contato.html">CONTATO</a>
                 </div>
             </div>
-        </section> -->
+        </button>
+    </nav>
+    <!-- /MENU DEVICE -->
 
-        <!--LOGIN-->
-        <div class="container-fluid align-content-center">
-            <p class="logologin"><img width="15%" src="imgs/login.jpg"></p>
 
-            <div class="container justify-content-center">
+    <div class="container-fluid" 
+        style="height: 100%;
+        background-color: #E17A84">
 
-                <form style="margin-top: 10%;">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Endereço de email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-                      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                    </div>
-                    <div class="form-group form-check">
-                    <a href="cadastro.html" target="_blank" >Não tem cadastro? Clique Aqui!</a>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar</button>
-                  </form>
+        <div id="carouselExampleIndicators" class="carousel slide m-5 p-5 desktop" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="box-shadow:0px 0px 20px #000000; border-radius: 10px;">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./imgs/maincapa.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/maincapa2.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/maincapa3.jpg" alt="Terceiro Slide">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+
+        <div class="container-fluid d-flex justify-content-center align-items-center my-5" style="">
+            <div class="container-fluid row">
+                <div class="desktop p-4 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex justify-content-center align-items-center" id="imgSvg"  style="">
+                    <img class="p-4" src="./imgs/imglogin.svg" alt="Imagem de capa do card" style="width: 750px; ">
+                </div>
+
+                <div class="m-auto p-5 col-12 col-md-12 col-lg-12 col-xl-5 " style="box-shadow:0px 0px 20px #000000; border-radius: 30px; background-color: rgba(241, 228, 251, 0); height: 30rem !important; border: none;">
+                    <h1 class="text-center pb-4" style="font-family: 'Rubik', sans-serif;">LOGIN</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" style="font-family: 'Rubik', sans-serif;">Endereço de email</label>
+                            <input type="email" class="form-control" style="background-color: rgb(223, 223, 223);" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" style="font-family: 'Rubik', sans-serif;">Senha</label>
+                            <input type="password" class="form-control" style="background-color: rgb(223, 223, 223);" id="exampleInputPassword1" placeholder="digite sua senha">
+                            <a class="form-text text-muted" style="font-family: 'Rubik', sans-serif; font-size: 12px;">Cadastre-se aqui!</a>
+                        </div>
+    
+                        <button type="submit" class="btn" 
+                            style=
+                            "width: 100%;
+                            background-color: rgba(255, 255, 255, 0);
+                            border: 3px solid#DC3545;
+                            color: #DC3545;
+                            font-weight: bold;">
+                            ENVIAR
+                        </button>
+                    </form>
+                </div>    
             </div>
         </div>
     </div>
-        <br> <br> <br>
-        <br> <br> <br>
-        <br> 
-    <!--RODAPÉ-->
-    <footer class="rodape" style="position: relative;">
-        <!-- FORMAS DE PAGAMENTO-->
-        <p class="logofooter"><img width="25%" src="imgs/pagamentos.jpg"></p>
 
-        <img class="imgpag" alt="Formas_De_Pagamento" title="Formas De Pagamento" src="imgs/pagamentos.png">    
 
-        <p class="copyright">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+
+
+    <div class="phone">
+        <br><br><br><br>
+        <br><br><br><br>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-danger font-weight-bold" style="height: 10vh; font-size: 110%;">
+        <div class="container text-center d-flex align-items-center justify-content-center" style="height: 100%; font-family: 'Rubik', sans-serif;">
+            ©2020 - Recode Pró - Full-Stack-Eletro
+        </div>
     </footer>
 
     <script src="./JS/eventos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
