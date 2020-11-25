@@ -27,11 +27,11 @@
     </style>
 
 </head>
-<body>
+<body style="background-color: rgb(240, 240, 240);">
 
 
     <!-- MENU DESKTOP -->
-    <nav class="desktop nav d-flex align-items-center bg-danger" style="height: 12vh;">
+    <nav class="desktop nav d-flex align-items-center bg-danger" style="height: 12vh; box-shadow: 2px 2px 10px black;">
         
         <a class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" 
         href="index.html"
@@ -83,9 +83,39 @@
     </nav>
     <!-- /MENU DEVICE -->
 
+    <div style="display: flex ; align-items: center; justify-content: center; height: 78vh;">
+
+        <div class="container-fluid">
+            <h3 class="text-center mb-4" style="color:#DC3545; font-weight: 800;">ENTRE EM CONTATO!</h3>
+            <div class="row d-flex align-items-center justify-content-center;">
+                
+                <form class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 p-5 mx-auto" action="" style="background-color: #ffffff;  box-shadow: 5px 5px 2px black;">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha">
+                    </div>
+                    <div>
+                        <label for="validationTextarea">Mensagem</label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="O que está pensando?"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn mt-3" style="width: 100%; border: 3px solid #DC3545;">Enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- FOOTER -->
-    <footer class="container-fluid bg-danger font-weight-bold" style="height: 10vh; font-size: 110%;">
+    <footer class="container-fluid bg-danger font-weight-bold" style="height: 10vh; font-size: 110%; bottom: 0 !important; position: fixed;">
         <div class="container text-center d-flex align-items-center justify-content-center" style="height: 100%; font-family: 'Rubik', sans-serif;">
             ©2020 - Recode Pró - Full-Stack-Eletro
         </div>
