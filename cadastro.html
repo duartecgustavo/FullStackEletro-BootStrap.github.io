@@ -91,33 +91,33 @@
 
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 d-flex justify-content-center">
 
-            <form class="p-3 m-4" style="width: 80%; background-color:#d6a2a9; box-shadow: 3px 3px 2px black; border-radius: 10px;">
+            <form class="p-3 m-4" style="width: 80%; background-color:#d6a2a9; box-shadow: 3px 3px 2px black; border-radius: 10px;" action="./conexao_BD/cadastroUsuario.php" method="post">
 
               <h2 class="text-center m-4 font-weight-bold" style="color: #DC3545;">CADASTRO</h2>
 
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="m-0">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputNome" placeholder="digite seu nome">
+                  <input type="text" class="form-control" id="exampleInputNome" name="nome" placeholder="digite seu nome">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="m-0">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="digite seu email">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1" class="m-0">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="senha" placeholder="digite sua senha">
                   </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="m-0">Nascimento</label>
-                  <input type="date" class="form-control" id="exampleInputNasc" placeholder="sua data de nascimento">
+                  <input type="date" class="form-control" id="exampleInputNasc" name="nascimento" placeholder="sua data de nascimento">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">CEP</label>
-                  <input type="number" class="form-control" id="exampleInputcep" placeholder="digite seu cep">
+                  <input type="number" class="form-control" id="exampleInputcep" name="cep" placeholder="digite seu cep">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1" class="m-0">Cidade/UF</label>
-                  <input type="text" class="form-control" id="exampleInputUF" placeholder="sua cidade/UF">
+                  <label for="exampleInputPassword1" class="m-0">Cidade</label>
+                  <input type="text" class="form-control" id="exampleInputUF" name="cidade" placeholder="sua cidade">
                   <a href="cadastro.html"  target="_blank" style="color: black; font-size: 13px;">Não tem cadastro? Clique Aqui!</a>
                 </div>
                 <button type="submit" class="btn font-weight-bold" style="width: 100%; border: 3px solid #DC3545; color: #DC3545;">ENVIAR</button>

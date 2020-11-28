@@ -7,43 +7,55 @@
     <meta name="palavra chave" content="html5, tecnologia">
 
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href=".../CSS/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="../../CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/bootstrap/global.css">
 
     <title>Full-Stack-Eletro</title>
+    <style>
 
+        @media(max-width: 993px){
+            .desktop{
+                display: none !important;
+            }
+        }
+    
+        @media(min-width: 993px){
+            .phone {
+                display: none !important;
+            }               
+        }
+    </style>
 </head>
 <body>
     <!-- style="border: 2px black solid;" -->
 
     <!-- MENU DESKTOP -->
-    <div class="container-fluid" style="">
-        <div class="desktop nav row d-flex align-items-center bg-danger" id="desktop1" style="height: 17vh; ">
-            
-            <a class="logo-page col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" 
-            href="index.html"
-            style="height: 100% !important;">
-            <img class="col-lg-5 p-2" src=".../imgs/svgs/logoSVG.svg" style="width: 150px; height: 100% !important;" alt="">
-            </a>
+    <nav class="desktop nav d-flex align-items-center bg-danger" style="height: 12vh; box-shadow: 2px 2px 10px black;">
+        
+        <a class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" 
+        href="index.html"
+        style="height: 100% !important;">
+        <img class="col-lg-5 p-2" src="../../imgs/svgs/logoSVG.svg" 
+        style="width: 150px; height: 100% !important;" alt="">
+        </a>
 
-            <div class="row col-lg-8 justify-content-end">
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2" style="font-size: 20px; color: black !important; background-color: rgba(228, 220, 220, 0.651); border-radius: 20px;" href="index.html">Home</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="produtos.html">Produtos</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="lojas.html">Lojas</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="contato.html">Contatos</a>
-
-            </div>
+        <div class="row col-lg-8 justify-content-end">
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2" style="font-size: 20px; color: black !important; background-color: rgba(228, 220, 220, 0.651); border-radius: 20px;" href="index.html">Home</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="produtos.php">Produtos</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="lojas.html">Lojas</a>
+            <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="contato.html">Contatos</a>
         </div>
-    </div>
+    </nav>
     <!-- /MENU DESKTOP -->
 
     <!-- MENU DEVICE -->
-    <nav class="phone nav row align-items-center bg-danger" style="height: 17vh;">
+    <nav class="phone nav row align-items-center bg-danger" style="height: 15vh; box-shadow: 2px 2px 10px black;">
 
         <a class="col-6 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-left" 
-        href="index.html"
-        style="height: 100% !important;">
-        <img class="col-lg-5 p-2" src=".../imgs/svgs/logoSVG.svg" style="width: 150px; height: 100% !important;" alt="">
+            href="index.html"
+            style="height: 100% !important;">
+            <img class="col-lg-5 p-2" src="../../imgs/svgs/logoSVG.svg" 
+            style="width: 150px; height: 100% !important;" alt="">
         </a>
 
 
@@ -57,26 +69,18 @@
                     data-toggle="dropdown" 
                     aria-haspopup="true" 
                     aria-expanded="false">
-                    <img class="mx-auto my-auto" src=".../imgs/svgs/seta-para-baixo-do-angulo.svg" alt="" style="width: 20px;">
+                    <img class="mx-auto my-auto" src="../../imgs/svgs/seta-para-baixo-do-angulo.svg" alt="" style="width: 20px;">
                     </a>
             
                 <div class="dropdown-menu dropdown-menu-right"  style="width: 80vw;" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item p-3 dropBar" style="background-color:#DB465A !important; font-weight: bold;" href="produtos.html">QUEM SOMOS</a>
-                    <a class="dropdown-item p-3 dropBar" style="background-color:#E17A84 !important; font-weight: bold;" href="lojas.html">BLOG</a>
+                    <a class="dropdown-item p-3 dropBar" style="background-color:#DB465A !important; font-weight: bold;" href="index.html">HOME</a>
+                    <a class="dropdown-item p-3 dropBar" style="background-color:#E17A84 !important; font-weight: bold;" href="lojas.html">LOJAS</a>
                     <a class="dropdown-item p-3 dropBar" style="background-color:#DB465A !important; font-weight: bold;" href="contato.html">CONTATO</a>
                 </div>
             </div>
         </button>
     </nav>
     <!-- /MENU DEVICE -->
-
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
 
     <script src="./JS/eventos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

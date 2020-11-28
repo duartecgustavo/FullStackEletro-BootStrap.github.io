@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Gustavo Castanho Duarte">
     <meta name="palavra chave" content="html5, tecnologia">
-
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css">
-
+    <script src="./JS/eventos.js"></script>
     <title>Full-Stack-Eletro</title>
+
+    <input type="button" value="anonymous function" onclick="exibirCategoria('oxi')">
+
+    <a onclick="exibirCategoria('asda')">GELADEIRAS</a>
+
+    <p class="box-item" id="gustao">gustavo</p>
+
+    <script>
+        function exibirCategoria(categoria) {
+            let elemento =  document.getElementsByClassName("box-item")
+            console.log(elemento[0]);}
+
+        function oki(tt){
+        console.log(tt);}
+    </script>
 </head>
+
 <body>
-    <!-- style="border: 2px black solid;" -->
-
-    <img src="./imgs/svgs/HEADER.svg" alt="" style="
-    position: absolute;
-    width: 100%;
-    height: 25vh;
-    left: 0px;
-    top: 0px;
-    border: 2px black solid;">
-
-
-
-
     <script src="./JS/eventos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
+
+<img class="m-3 img-fluid" src="./imgs/<?php echo $rows["imagem"]; ?>" alt="<?php echo $rows["categoria"]; ?>" style="width: 200px; height: 170px;">
+<p class="text-muted"><?php echo $rows["descricao"]; ?></p>
+<hr>
+<small class="text-muted"><del>R$<?php echo $rows["preco"]; ?></del></small>
+<p class="" style="font-size: 1.4rem; color:#DC3545;"><strong>R$<?php echo $rows["preco"]; ?></strong></p>
