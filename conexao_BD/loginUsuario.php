@@ -22,8 +22,18 @@ if (strlen($email) > 3 && strlen($senha) > 3) {
         print_r($usuarios);
         echo '</pre> <hr />';
 
+
+        $_SESSION['idusuario'] = $usuarios[0];
         $_SESSION['nome'] = $usuarios[1];
         $_SESSION['email'] = $usuarios[2];
+        $_SESSION['nascimento'] = $usuarios[3];
+        $_SESSION['senha'] = $usuarios[4];
+        $_SESSION['cep'] = $usuarios[5];
+        $_SESSION['cidade'] = $usuarios[6];
+
+        echo $_SESSION['idusuario'] = $usuarios[0];
+        echo $_SESSION['nome'] = $usuarios[1];
+        echo $_SESSION['email'] = $usuarios[2];
 
         header('Location: http://localhost/FullStackEletro-v2/homeLogado.php');
         "<script>

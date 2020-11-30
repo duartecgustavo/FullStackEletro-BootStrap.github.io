@@ -45,22 +45,21 @@ require_once('./conexao_BD/conexao_prod.php');
         <div class="d-flex col-lg-9">
 
             <div class="d-flex justify-content-end col-lg-10">
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2" style="font-size: 20px; color: black !important; background-color: rgba(228, 220, 220, 0.651); border-radius: 20px;" href="index.html">Home</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="produtos.php">Produtos</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="lojas.html">Lojas</a>
-                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="contato.html">Contatos</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="homeLogado.php">Home</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2" style="font-size: 20px; color: black !important; background-color: rgba(228, 220, 220, 0.651); border-radius: 20px;" href="produtosLogado.php">Produtos</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="lojasLogado.php">Lojas</a>
+                <a class="nav-link2 font-weight-bold text-white text-center col-lg-2 bg-danger" style="font-size: 20px; color: black !important;" href="contatoLogado.php">Contatos</a>
             </div>
             <div class="d-flex justify-content-center align-items-center col-lg-2">
-                <h5 class="col-lg-7 d-flex justify-content-end"><?php echo $_SESSION['nome'] ?></h5>
-                <div class="dropdown">
-                    <button class="btn text-white rounded-circle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item py-2" href="perfil.php">Meu perfil</a>
-                        <a class="dropdown-item py-2" href="./conexao_BD/sair.php">Sair</a>
-                    </div>
+                <h5 class="col-lg-7 d-flex justify-content-end">Oi, <?php echo $_SESSION['nome'] ?></h5>
+<button class="btn text-white rounded-circle dropdown-toggle mb-1 p-auto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #292929; box-shadow: 3px 3px 5px black;">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="">
+                    <a class="dropdown-item py-2" href="perfilUsuario.php">Meu perfil</a>
+                    <a class="dropdown-item py-2" href="./conexao_BD/sair.php">Sair</a>
                 </div>
             </div>
+        </div>
 
         </div>
 
