@@ -10,7 +10,7 @@ $senha = $_POST['senha'];
 
 if (strlen($email) > 3 && strlen($senha) > 3) {
     // Realizando conexão com banco
-    $conn = mysqli_connect("localhost", "root", "", "fseletro-v2");
+    $conn = mysqli_connect("localhost", "root", "", "fseletro_v2");
 
     // Execução da instrução SQL e validando e-mail e senha
     $resultado_consulta = $conn->query("SELECT * from usuarios where email = '$email' AND senha = '$senha'");

@@ -31,7 +31,7 @@ require_once('./conexao_BD/conexao_prod.php');
 
 </head>
 
-<body style="background-color: #777777; background-image: url('./imgs/bg\ pattern');">
+<body style="background-color: #777777; background-image: url('./imgs/bg-pattern.png');">
     <!--  -->
 
     <!-- MENU DESKTOP -->

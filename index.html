@@ -34,7 +34,7 @@
 
 </head>
 
-<body style="background-color: #777777; background-image: url('./imgs/bg\ pattern'); ">
+<body style="background-color: #777777; background-image: url('./imgs/bg-pattern.png'); ">
 
 
     <!-- MENU DESKTOP -->
@@ -162,15 +162,18 @@
         </div>
         <div class="container my-5 p-0" style="border-radius: 30px; background-color:hsla(0, 0%, 88%, 0.3)">
 
-            <div class="row" style="">
+            <div class="row">
 
                 <div class="d-flex align-items-center justify-content-center col-sm-12 col-md-12 col-lg-6 col-xl-6">
 
                     <div class="container p-5"
-                        style="border-radius: 30px; background-color:#292929; box-shadow: 3px 3px 3px black;">
+                        style="border-radius: 30px; background-color:#292929;   ">
+
                         <h1 class="text-center pb-4" style="font-family: 'Rubik', sans-serif; color: #E0E0E0;">LOGIN
                         </h1>
+
                         <form action="./conexao_BD/loginUsuario.php" method="post">
+
                             <div class="form-group">
                                 <label for="exampleInputEmail1"
                                     style="font-family: 'Rubik', sans-serif; color: #E0E0E0;">Endereço de email</label>
@@ -178,7 +181,9 @@
                                     name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
                                     placeholder="digite seu email">
                             </div>
+
                             <div class="form-group">
+
                                 <label for="exampleInputPassword1"
                                     style="font-family: 'Rubik', sans-serif; color: #E0E0E0;">Senha</label>
                                 <input type="password" class="form-control"
@@ -196,6 +201,7 @@
                                     font-weight: bold;">
                                 LOGAR
                             </button>
+
                         </form>
                     </div>
 

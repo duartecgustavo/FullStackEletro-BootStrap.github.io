@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "fseletro-v2");
+$conn = mysqli_connect("localhost", "root", "", "fseletro_v2");
 
 ?>

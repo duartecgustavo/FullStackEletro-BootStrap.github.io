@@ -30,7 +30,7 @@ if (
     && strlen($cidade) > 3 && strlen($nascimento) > 3 && $idade > 18
 ) {
 
-    $conn = mysqli_connect("localhost", "root", "", "fseletro-v2");
+    $conn = mysqli_connect("localhost", "root", "", "fseletro_v2");
     $sql = "INSERT INTO usuarios (nome, email, nascimento, senha, cep, cidade) values ('$nome', '$email', '$nascimento', '$senha', '$cep', '$cidade')";
     $conn->query($sql);
 

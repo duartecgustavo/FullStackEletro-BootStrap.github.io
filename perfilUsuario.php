@@ -39,7 +39,7 @@ session_start();
 
 </head>
 
-<body style="background-color: #777777; background-image: url('./imgs/bg\ pattern');">
+<body style="background-color: #777777; background-image: url('./imgs/bg-pattern.png');">
 
     <script>
         function confirmar() {
